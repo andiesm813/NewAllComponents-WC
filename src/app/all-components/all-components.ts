@@ -4,8 +4,8 @@ import { IgcCategoryChartModule } from '@infragistics/igniteui-webcomponents-cha
 import { ModuleManager } from '@infragistics/igniteui-webcomponents-core';
 import { defineComponents, IgcAccordionComponent, IgcAvatarComponent, IgcBadgeComponent, IgcButtonComponent, IgcCalendarComponent, IgcCardComponent, IgcCheckboxComponent, IgcChipComponent, IgcComboComponent, IgcDialogComponent, IgcExpansionPanelComponent, IgcIconButtonComponent, IgcIconComponent, IgcInputComponent, IgcListComponent, IgcListItemComponent, IgcRadioComponent, IgcRadioGroupComponent, IgcRatingComponent, IgcRippleComponent, IgcSelectComponent, IgcSelectHeaderComponent, IgcSliderComponent, IgcSnackbarComponent, IgcStepperComponent, IgcSwitchComponent, IgcTabsComponent, IgcTreeComponent } from 'igniteui-webcomponents';
 import '@infragistics/igniteui-webcomponents-grids/grids/combined.js';
-import { EmployeesType } from '../models/northwind/employees-type';
 import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
+import { EmployeesType } from '../models/northwind/employees-type';
 import { financialService } from '../services/Financial-service';
 import { northwindService } from '../services/Northwind-service';
 
@@ -15,8 +15,8 @@ ModuleManager.register(IgcCategoryChartModule);
 
 ModuleManager.register(IgcCategoryChartModule);
 
-@customElement('app-view1')
-export default class View1 extends LitElement {
+@customElement('app-all-components')
+export default class AllComponents extends LitElement {
   static styles = css`
     :host {
       height: 100%;
@@ -25,6 +25,7 @@ export default class View1 extends LitElement {
       justify-content: flex-start;
       align-items: stretch;
       align-content: flex-start;
+      overflow: auto;
     }
     .row-layout {
       display: flex;
