@@ -102,8 +102,8 @@ export default class App extends LitElement {
         </igc-icon-button>
       </igc-navbar>
       <div class="row-layout group_1">
-        <igc-nav-drawer ?open="${true}" position="relative" id="nav-drawer" class="nav-drawer">
-          <igc-nav-drawer-item @click="${() => Router.go('/view1')}">
+        <igc-nav-drawer position="relative" id="nav-drawer" class="nav-drawer">
+          <igc-nav-drawer-item @click="${() => Router.go('/all-components')}">
             <span slot="icon">
               <span class="material-icons icon">
                 book
@@ -121,7 +121,7 @@ export default class App extends LitElement {
             </span>
             <div slot="content">View 2</div>
           </igc-nav-drawer-item>
-          <igc-nav-drawer-item @click="${() => Router.go('/view3')}">
+          <igc-nav-drawer-item>
             <span slot="icon">
               <span class="material-icons icon">
                 assignment_turned_in

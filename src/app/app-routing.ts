@@ -1,11 +1,11 @@
 import { Route } from '@vaadin/router';
 import './not-found/not-found.js';
-import './view1/view1';
-import './view3/view3';
+import './all-components/all-components';
+import './calendar/calendar';
 
 export const routes: Route[] = [
-  { path: 'view1', component: 'app-view1', name: 'View1' },
-  { path: 'view3', component: 'app-view3', name: 'View3' },
+  { path: 'all-components', component: 'app-all-components', name: 'All Components' },
+  { path: 'calendar', component: 'app-calendar', name: 'Calendar' },
   // The fallback route should always be after other alternatives.
   { path: '(.*)', component: 'app-not-found' }
 ];
